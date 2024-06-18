@@ -1,0 +1,667 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background-color: black;
+    padding: 0.5em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+nav .logo {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+nav .nav-menu li {
+    display: inline;
+}
+
+nav .nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s, color 0.3s;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+nav .nav-menu a:hover {
+    color: #fff;
+}
+
+#mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+
+/* Hero Section */
+#home {
+    background: url('welcome.png') no-repeat center center/cover;
+    background: cover;
+    color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#home.parallax {
+    background-attachment: fixed;
+}
+
+#home .btn {
+    background: black;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#home .btn:hover {
+    background: #0056b3;
+}
+
+#home .container h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#home .container p {
+    margin-bottom: 25px;
+}
+
+/* About Section */
+#about {
+    
+    background-color :#666;
+    padding: 6em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#about .container {
+    color: white;
+}
+
+#about .hero-content {
+    background-color: rgb(0 0 0 / 82%); /* Semi-transparent background for text */
+    padding: 2em;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#about img {
+    max-width: 150px;
+    border-radius: 50%; /* Change the shape of profile picture */
+    margin: 1em 0;
+}
+
+/* Skills Section */
+#skills {
+    background: url('skill.png') no-repeat center center/cover;
+    padding: 10em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+#skills h3 {
+    color: blue;
+}
+
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.technical-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.skill-category {
+    flex-basis: 100%;
+}
+
+.skill-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.skill-details p {
+    flex-basis: 45%;
+    text-align: left;
+}
+
+.soft-skills {
+    max-width: 600px;
+    text-align: left;
+}
+
+.skill-category, .soft-skills {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.soft-skills p {
+    text-align: left;
+    margin: 0 auto;
+    color: white;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background: url('projects.png') no-repeat center center/cover;
+    padding: 4em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff; /* Ensuring text is visible on the background */
+}
+
+#portfolio h2 {
+    color: black;
+}
+
+#portfolio .container {
+    display: flex;
+    background: rgba(255 255 255/ 94%);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+#portfolio .project-img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.portfolio-item {
+    width: 30%; /* Adjust width as needed */
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    text-align: center;
+}
+.portfolio-wrapper a:link {
+    text-decoration: none;
+    color: black;
+}
+.portfolio-wrapper a h3{
+    
+    color: black;
+}
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.1em; /* Adjust font size for better fit */
+    line-height: 1.2em; /* Control line height */
+}
+
+/* Skills Section */
+.licenses {
+    background: beige;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 2s ease-in;
+}
+
+.licenses .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.licenses .certification-item {
+    background: #80808047;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.licenses .certification-item h3 {
+    color: #333;
+}
+
+.licenses h2 {
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.licenses .certification-item p {
+    color: #666;
+}
+
+/* Experience Section */
+#experience {
+    background: url('experience.png') no-repeat center center/cover;
+    background-size: cover;
+    padding: 7em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#experience .container {
+    color: black;
+}
+
+#experience .experience-item {
+    background: #fffffff7;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#experience h3 {
+    color: #007bff;
+}
+
+/* Education Section */
+#education {
+    background: url('study.png') no-repeat center center/cover;
+    background-size: cover;
+    padding: 7em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+#education .education-item {
+    background-color: #000000e6;
+   
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#education h3 {
+    color: #007bff;
+}
+
+#education .container {
+    color: white;
+}
+
+/* Contact Section */
+#contact {
+    padding: 3em 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    width: 80%;
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact .btn {
+    background: #007bff;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+}
+
+#contact .btn:hover {
+    background: #0056b3;
+}
+
+.social-links {
+    margin-top: 2em;
+}
+
+.social-links a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Lightbox */
+.lightbox {
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    nav .nav-menu {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    nav .nav-menu li {
+        margin: 0.5em 0;
+    }
+
+    #home .container h1 {
+        font-size: 40px;
+    }
+
+    #about .hero-content {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    #portfolio .portfolio-item {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .licenses .certification-item {
+        width: 100%;
+    }
+
+    #experience .experience-item {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    #education .education-item {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #home .container h1 {
+        font-size: 30px;
+    }
+
+    #home .container p {
+        font-size: 1em;
+    }
+
+    nav .container {
+        padding: 0 0.5em;
+    }
+
+    nav .logo {
+        font-size: 1.2em;
+    }
+
+    nav .nav-menu {
+        align-items: flex-start;
+    }
+
+    #about {
+        padding: 5em 1em;
+    }
+
+    #skills {
+        padding: 5em 1em;
+    }
+
+    #portfolio {
+        padding: 5em 1em;
+    }
+
+    #experience {
+        padding: 5em 1em;
+    }
+    #education {
+        padding: 5em 1em;
+    }
+
+    #contact {
+        padding: 3em 1em;
+    }
+
+    footer ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Add styles for the mobile menu button */
+.mobile-menu-btn {
+    display: none;
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: row;
+        align-items: center;;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+    #mobile-menu-icon {
+        display: block;
+      }
+
+    nav .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        
+        top: 50px;
+        right: 10px;
+        background-color: #000;
+        padding: 10px;
+        position: absolute;
+    }
+
+    nav .nav-menu.active {
+        display: flex;
+    }
+
+    nav .nav-menu li {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .nav-menu a {
+        padding: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    #home .container h1 {
+        font-size: 40px;
+    }
+
+    #about .hero-content {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    #portfolio .portfolio-item {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .licenses .certification-item {
+        width: 100%;
+    }
+
+    #experience .experience-item {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    #education .education-item {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #home .container h1 {
+        font-size: 30px;
+    }
+
+    #home .container p {
+        font-size: 1em;
+    }
+
+    nav .container {
+        padding: 0 0.5em;
+    }
+
+    nav .logo {
+        font-size: 1.2em;
+    }
+
+    nav .nav-menu {
+        align-items: flex-start;
+    }
+
+    #about {
+        padding: 5em 1em;
+    }
+
+    #skills {
+        padding: 5em 1em;
+    }
+
+    #portfolio {
+        padding: 5em 1em;
+    }
+
+    #experience {
+        padding: 5em 1em;
+    }
+    #education {
+        padding: 5em 1em;
+    }
+
+    #contact {
+        padding: 3em 1em;
+    }
+
+    footer ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

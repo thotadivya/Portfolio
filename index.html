@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya Lakshmi Thota - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <a href="#home" class="logo">Divya Lakshmi Thota</a>
+            <button id="mobile-menu-icon" class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="parallax">
+        <div class="container">
+            <div>
+                <h1 class="animate__animated animate__fadeInDown">Welcome to my portfolio</h1>
+                <p class="animate__animated animate__fadeInUp">I am Divya Lakshmi Thota, a skilled Software Developer</p>
+                <a href="#portfolio" class="btn">View My Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="parallax1">
+        <div class="container">
+            <div class="hero-content">
+                <h2>About Me</h2>
+                <p data-aos="fade-up"> Hi, I'm Divya Lakshmi Thota, a software engineer with a passion for crafting innovative solutions and exploring the realms of AI and machine learning. With a master's in Computer Science and a knack for problem-solving, I thrive on turning complex challenges into elegant, efficient code. Let's create something amazing together!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item" data-aos="fade-up">
+                <h3>University of North Texas</h3>
+                <p>Master of Science in Computer Science | May 2024</p>
+                <p><strong>Relevant Courses:</strong> Computer Networks, Software Engineering, Machine Learning, <br>Usability Testing, Computer Algorithms, Database Management Systems, <br>Operating Systems, Big Data Analytics, Data Mining</p>
+                <p><strong>Teaching Experience:</strong> Teaching Assistant for Computer Algorithms <br>and Graph Theory courses</p>
+                <p><strong>Extracurricular Activities:</strong> Member of AI Club</p>
+            </div>
+            <div class="education-item" data-aos="fade-up">
+                <h3>Sree Venkateswara College of Engineering</h3>
+                <p>Bachelor of Technology in Computer Science and Engineering | May 2019</p>
+                <p><strong>Relevant Courses:</strong> Data Structures, Operating Systems, Computer Networks</p>
+                <p><strong>Achievements:</strong> Graduated with Honors, Best Project Award</p>
+                <p><strong>Extracurricular Activities:</strong> Women's Representative for three consecutive years,<br> Coding Club Member</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-item" data-aos="fade-up">
+                <h3>Full-stack Developer at Tata Consultancy Services</h3>
+                <p>Hyderabad, India | August 2019 – June 2021</p>
+                <p>Led full-stack Java and Angular web application development projects utilizing Spring Boot, microservices, and MySQL, while designing user interfaces (UI/UX) with JSP, HTML, CSS, JavaScript, Angular, and Bootstrap. Developed and maintained single-page applications (SPAs) using AngularJS, participating in all SDLC phases, including requirements gathering, analysis, design, development, and testing, following AGILE/Scrum methodology. Streamlined deployment processes using Git, Bitbucket, and Jenkins, reducing deployment time by 30%.</p>
+            </div>
+            <div class="experience-item" data-aos="fade-up">
+                <h3>Frontend Developer at HDFC</h3>
+                <p>Hyderabad, India | July 2021 – June 2022</p>
+               <p>Developed and optimized cross-browser compatible web interfaces using JSP, HTML, CSS, JavaScript, Angular, and Bootstrap, integrating with backend APIs and improving user satisfaction by 15%. Consumed RESTful APIs and processed JSON data for dynamic content display, enhancing functionality and interactivity. Collaborated with backend developers to ensure seamless communication and data exchange, managing the complete SDLC and achieving a 95% test coverage rate through diligent unit testing.</p>
+            </div>
+            <div class="experience-item" data-aos="fade-up">
+                <h3>Developer Intern at Suneratech</h3>
+                <p>Hyderabad, India | December 2018 – June 2019</p>
+                <p>Interned with the Cloudtestr team, focusing on an automated testing tool, conducting code reviews to ensure quality and adherence to best practices. Identified and debugged errors in the tool’s codebase, contributing to overall performance improvement and enhanced functionality and reliability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="licenses" class="licenses">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="certification-item">
+                    <div class="card">
+                        <h3>Programming Languages</h3>
+                        <p>C, Java, JavaScript, TypeScript, HTML, CSS, SQL, Bootstrap, Python basics, JSON, XML, Node.js, React.js</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="card">
+                        <h3>Technologies/Frameworks</h3>
+                        <p>Spring, Spring Boot, Servlets, RESTful APIs, JSP, Angular, AngularJS</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="card">
+                        <h3>Data Science & Machine Learning</h3>
+                        <p>TensorFlow, PyTorch, LLM, GenAI, BERT, Numpy, Pandas, Apache Spark, Machine Learning algorithms, Deep Learning, Dataflow</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="card">
+                        <h3>Tools</h3>
+                        <p>MySQL, Eclipse, Git/GitHub, Bitbucket, Unix Shell, Node.js, VS Code, Atom, Jenkins, Maven, Jira, Postman</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="card">
+                        <h3>Operating Systems</h3>
+                        <p>Linux, Windows, iOS, Android</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="card">
+                        <h3>AWS DevOps</h3>
+                        <p>Infrastructure as Code (IaC) with AWS CloudFormation, CI/CD pipelines using AWS CodePipeline and AWS CodeDeploy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="portfolio-wrapper">
+                <a href="https://github.com/thotadivya/JobApplication_Portal">
+                    <img class="project-img" src="expense.png" alt="Job Application Portal">
+                    <h3>Job Application System</h3>
+                </a>
+                <a href="https://github.com/thotadivya/Forecasting-Financial-Insolvency">
+                    <img class="project-img" src="bankruptsy.png" alt="Predicting Bankruptcy Risk with Machine Learning">
+                    <h3>Predicting Bankruptcy Risk with Machine Learning</h3>
+                </a>
+                <a href="https://github.com/thotadivya/Gym-Access-Management-System" data-lightbox="portfolio">
+                    <img class="project-img" src="gymaccess.png" alt="Gym Access Management Application">
+                    <h3>Gym Access Management Application</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contactForm" action="submit_form.php" method="POST" data-aos="fade-up">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/DivyaLakshmiThota"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/thotadivya"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Divya Lakshmi Thota. All rights reserved.</p>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
