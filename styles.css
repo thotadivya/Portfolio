@@ -327,7 +327,7 @@ nav .nav-menu a:hover {
 
 /* Education Section */
 #education {
-    background: url('study.png') no-repeat center center/cover;
+    background-color: #00000033;
     background-size: cover;
     padding: 7em;
     text-align: center;
@@ -343,6 +343,9 @@ nav .nav-menu a:hover {
 
 #education h3 {
     color: #007bff;
+}
+#education h2 {
+    color: black;
 }
 
 #education .container {
